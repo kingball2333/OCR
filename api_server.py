@@ -15,23 +15,23 @@ class ScaleAnalyzer(MethodView):
             # 获取请求参数
             args = request.form or request.get_json()
             pict_url = args.get('pictureUrl')
-            log.info("图片地址: {}".format(pict_url))
+            log.info("Image URL: {}".format(pict_url))
 
             # 确保 URL 安全编码
             if pict_url:
                 # 对 URL 进行编码，保留常见的 URL 特殊字符
                 encoded_url = quote(pict_url, safe=':/?&=')
             else:
-                raise ValueError("未提供图片地址")
+                raise ValueError("Image URL not provided")
 
         except Exception as e:
-            log.exception("参数错误: {}".format(e))
-            response = {'code': 400, 'result': None, 'msg': '参数错误'}
+            log.exception("Parameter Error: {}".format(e))
+            response = {'code': 400, 'result': None, 'msg': 'Parameter Error'}
             return jsonify(response), 400
 
         if not pict_url:
-            response = {'code': 401, 'result': None, 'msg': '流获取失败'}
-            log.info("流获取失败")
+            response = {'code': 401, 'result': None, 'msg': 'Failed to obtain stream'}
+            log.info("Failed to obtain stream")
             return jsonify(response), 401
 
         t0 = time.time()
@@ -53,19 +53,19 @@ class ScaleAnalyzer(MethodView):
 
                 else:
                     # 如果没有数字或小数点就返回 null
-                    response = {'code': 200, 'result': None, 'msg': '推理结果不合法'}
+                    response = {'code': 200, 'result': None, 'msg': 'Inference result does not contain numbers or decimal points'}
 
             else:
                 # 如果没有结果，返回 null
-                response = {'code': 200, 'result': None, 'msg': '推理结果不合法'}
+                response = {'code': 200, 'result': None, 'msg': 'Inference result is null'}
 
 
         except Exception as e:
-            log.exception("推理错误: {}".format(e))
-            response = {'code': 200, 'result': None, 'msg': '推理错误'}
+            log.exception("Inference Error: {}".format(e))
+            response = {'code': 200, 'result': None, 'msg': 'Inference Error'}
 
-        log.info("接口返回值为：{}".format(response))
-        log.info("接口耗时: {:.2f} 秒".format(time.time() - t0))
+        log.info("API return value is：{}".format(response))
+        log.info("API Response Time: {:.2f} 秒".format(time.time() - t0))
         return jsonify(response), response['code']
 
 
