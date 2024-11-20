@@ -88,7 +88,6 @@ def find_digit_display_regions(img: np.ndarray, visualize: bool = False) -> Opti
         cv2.destroyAllWindows()
     return bounding_boxes
 
-
 # 根据边界框裁剪图像
 def crop_image(img: np.ndarray, bbox: List[int]) -> np.ndarray:
     x_min, y_min, w, h = bbox
@@ -111,8 +110,6 @@ def crop_image(img: np.ndarray, bbox: List[int]) -> np.ndarray:
     cropped = img[y_min:y_max, x_min:x_max]
     return cropped
 
-
-
 # 使用 PaddleX 模型进行 OCR 识别，返回识别的文本列表
 def perform_paddlex_ocr(image_path: str, pipeline_config: str, output_dir: str) -> Optional[List[str]]:
     pipeline = create_pipeline(pipeline=pipeline_config)
@@ -128,7 +125,6 @@ def perform_paddlex_ocr(image_path: str, pipeline_config: str, output_dir: str) 
         return texts
     else:
         return None
-
 
 # 处理输入图像，进行裁剪和 OCR 识别，返回识别的文本列表
 def process_image(image: np.ndarray, font_path: str, pipeline_config: str, output_dir: str = "./output",
