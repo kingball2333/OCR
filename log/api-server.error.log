@@ -1,0 +1,109 @@
+2024-11-19T15:05:47.975152-+08:00 | DESKTOP-31GR1E6 | 23792  | api-server | ERROR    | root:inference.py:136 | 无法解码图片
+2024-11-19T16:07:53.294257-+08:00 | DESKTOP-31GR1E6 | 9636   | api-server | ERROR    | root:api_server.py:62 | 推理错误: inference() missing 1 required positional argument: 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 40, in post
+    scale_result = inference(encoded_url)  # 使用编码后的 URL 进行推理
+TypeError: inference() missing 1 required positional argument: 'template_path'
+2024-11-19T16:09:50.014650-+08:00 | DESKTOP-31GR1E6 | 26320  | api-server | ERROR    | root:api_server.py:63 | 推理错误: inference() missing 1 required positional argument: 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 41, in post
+    scale_result = inference(encoded_url)
+TypeError: inference() missing 1 required positional argument: 'template_path'
+2024-11-19T16:16:55.535252-+08:00 | DESKTOP-31GR1E6 | 20524  | api-server | ERROR    | root:api_server.py:54 | 推理错误: unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 51, in post
+    print(scale_result + "2")
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+2024-11-19T16:17:46.647604-+08:00 | DESKTOP-31GR1E6 | 25436  | api-server | ERROR    | root:api_server.py:54 | 推理错误: unsupported operand type(s) for +: 'NoneType' and 'str'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 51, in post
+    print(scale_result + "2")
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+2024-11-19T16:24:20.420059-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    scale_result = inference(pict_url, template_path=pict_url)  # 使用本地路径作为模板路径
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:38:11.797888-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    # 调用 inference 函数进行推理，传入图片路径
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:38:28.437894-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    # 调用 inference 函数进行推理，传入图片路径
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:39:22.768630-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    # 调用 inference 函数进行推理，传入图片路径
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:41:33.352018-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    # 调用 inference 函数进行推理，传入图片路径
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:41:35.492793-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    # 调用 inference 函数进行推理，传入图片路径
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:44:18.997463-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    # 检查图片路径是否有效
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:52:30.997311-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:52:54.479188-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:54:18.293549-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:54:33.475761-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:55:30.522172-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:55:31.448873-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T16:55:37.330188-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T17:00:15.460652-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    encoded_url = quote(pict_url, safe=':/?&=')
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T17:00:17.595517-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    encoded_url = quote(pict_url, safe=':/?&=')
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T17:01:12.407749-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    encoded_url = quote(pict_url, safe=':/?&=')
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T17:04:53.707006-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    encoded_url = quote(pict_url, safe=':/?&=')
+TypeError: inference() got an unexpected keyword argument 'template_path'
+2024-11-19T17:04:55.390043-+08:00 | DESKTOP-31GR1E6 | 19944  | api-server | ERROR    | root:api_server.py:26 | 参数错误: inference() got an unexpected keyword argument 'template_path'
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 23, in post
+    encoded_url = quote(pict_url, safe=':/?&=')
+TypeError: inference() got an unexpected keyword argument 'template_path'

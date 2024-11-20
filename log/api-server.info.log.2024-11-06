@@ -1,0 +1,3 @@
+2024-11-06T23:36:24.266424-+08:00 | DESKTOP-31GR1E6 | 24504  | api-server | INFO     | root:api_server.py:61 |  "/api/ai/scale/analyzer POST"
+2024-11-06T23:36:24.287369-+08:00 | DESKTOP-31GR1E6 | 24504  | api-server | INFO     | root:api_server.py:16 | Õº∆¨µÿ÷∑: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCR ∂±≤‚ ‘.png
+2024-11-06T23:36:28.175618-+08:00 | DESKTOP-31GR1E6 | 24504  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [06/Nov/2024 23:36:28] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -

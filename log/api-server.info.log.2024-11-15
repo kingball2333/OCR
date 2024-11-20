@@ -1,0 +1,223 @@
+2024-11-15T14:36:57.175709-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T14:36:57.176247-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T14:37:54.093630-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:37:54.093630-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: D:/shiyantupian/test1.png
+2024-11-15T14:37:54.095624-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | ERROR    | root:inference.py:120 | ÎÞ·¨ÏÂÔØÍ¼Æ¬: <urlopen error unknown url type: d>
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 118, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: d>
+2024-11-15T14:37:54.150421-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:37:54.151419-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.06 Ãë
+2024-11-15T14:37:54.153411-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:37:54] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:38:24.890153-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:38:24.890153-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: D:/shiyantupian/test1.png
+2024-11-15T14:38:24.891150-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | ERROR    | root:inference.py:120 | ÎÞ·¨ÏÂÔØÍ¼Æ¬: <urlopen error unknown url type: d>
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 118, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: d>
+2024-11-15T14:38:24.891150-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:38:24.891150-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:38:24.891150-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:38:24] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:45:25.463207-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:45:25.477769-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | ERROR    | root:api_server.py:28 | ²ÎÊý´íÎó: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 16, in post
+    args = request.form or request.get_json()
+  File "D:\Anaconda\envs\pyt39\lib\site-packages\werkzeug\wrappers\request.py", line 601, in get_json
+    return self.on_json_loading_failed(None)
+  File "D:\Anaconda\envs\pyt39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+  File "D:\Anaconda\envs\pyt39\lib\site-packages\werkzeug\wrappers\request.py", line 644, in on_json_loading_failed
+    raise UnsupportedMediaType(
+werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-15T14:45:25.560194-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:45:25] "[31m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 400 -
+2024-11-15T14:51:43.299988-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T14:51:43.299988-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T14:51:46.847340-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:51:46.847340-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: D:/shiyantupian/test1.png
+2024-11-15T14:51:46.848332-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | ERROR    | root:inference.py:131 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T14:51:46.848332-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:51:46.848332-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:51:46.848332-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:51:46] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:53:01.538398-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:53:01.538398-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: D:/shiyantupian/test1.png
+2024-11-15T14:53:01.538398-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | ERROR    | root:inference.py:131 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T14:53:01.539395-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:53:01.539395-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:53:01.539395-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:53:01] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:55:12.105972-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T14:55:12.105972-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T14:55:14.842752-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:55:14.843750-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: D:/shiyantupian/test1.png
+2024-11-15T14:55:14.843750-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | ERROR    | root:inference.py:131 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T14:55:14.843750-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:55:14.843750-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:55:14.844747-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:55:14] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:57:23.566105-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T14:57:23.566105-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T14:57:44.572371-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:57:44.573342-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: test1.png
+2024-11-15T14:57:44.574339-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | ERROR    | root:inference.py:132 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T14:57:44.575337-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:57:44.575337-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:57:44.576334-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:57:44] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:58:11.343742-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:58:11.343742-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T14:58:11.344740-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | ERROR    | root:inference.py:132 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T14:58:11.344740-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:58:11.344740-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:58:11.344740-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:58:11] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T14:58:34.156361-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T14:58:34.156361-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T14:58:34.157359-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | ERROR    | root:inference.py:132 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T14:58:34.157359-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T14:58:34.157359-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T14:58:34.159358-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 14:58:34] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:00:06.568022-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:00:06.568022-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:00:10.284721-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:00:10.286717-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:00:10.287714-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | ERROR    | root:inference.py:136 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T15:00:10.288711-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | root:api_server.py:55 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T15:00:10.288711-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | root:api_server.py:56 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T15:00:10.290706-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:00:10] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:01:22.200994-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:01:22.200994-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:01:34.163664-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:01:34] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:02:10.442907-+08:00 | DESKTOP-31GR1E6 | 53408  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:02:10.442907-+08:00 | DESKTOP-31GR1E6 | 53408  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:02:12.677846-+08:00 | DESKTOP-31GR1E6 | 53408  | api-server | INFO     | root:api_server.py:68 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:02:12.677846-+08:00 | DESKTOP-31GR1E6 | 53408  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:02:15.352329-+08:00 | DESKTOP-31GR1E6 | 53408  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:02:15] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:03:46.957273-+08:00 | DESKTOP-31GR1E6 | 49628  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:03:46.958271-+08:00 | DESKTOP-31GR1E6 | 49628  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:03:48.130194-+08:00 | DESKTOP-31GR1E6 | 49628  | api-server | INFO     | root:api_server.py:70 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:03:48.130194-+08:00 | DESKTOP-31GR1E6 | 49628  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:03:50.781054-+08:00 | DESKTOP-31GR1E6 | 49628  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:03:50] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:04:07.339892-+08:00 | DESKTOP-31GR1E6 | 46736  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:04:07.339892-+08:00 | DESKTOP-31GR1E6 | 46736  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:04:09.206471-+08:00 | DESKTOP-31GR1E6 | 46736  | api-server | INFO     | root:api_server.py:70 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:04:09.207468-+08:00 | DESKTOP-31GR1E6 | 46736  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:04:11.867136-+08:00 | DESKTOP-31GR1E6 | 46736  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:04:11] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:08:31.351649-+08:00 | DESKTOP-31GR1E6 | 54044  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:08:31.351649-+08:00 | DESKTOP-31GR1E6 | 54044  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:08:33.992296-+08:00 | DESKTOP-31GR1E6 | 54044  | api-server | INFO     | root:api_server.py:70 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:08:33.993293-+08:00 | DESKTOP-31GR1E6 | 54044  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:08:36.834569-+08:00 | DESKTOP-31GR1E6 | 54044  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:08:36] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:20:09.499951-+08:00 | DESKTOP-31GR1E6 | 58068  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:20:09.499951-+08:00 | DESKTOP-31GR1E6 | 58068  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:20:13.506232-+08:00 | DESKTOP-31GR1E6 | 58068  | api-server | INFO     | root:api_server.py:77 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:20:13.507231-+08:00 | DESKTOP-31GR1E6 | 58068  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:20:16.181798-+08:00 | DESKTOP-31GR1E6 | 58068  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:20:16] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:21:54.374332-+08:00 | DESKTOP-31GR1E6 | 54532  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:21:54.374332-+08:00 | DESKTOP-31GR1E6 | 54532  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:21:59.257079-+08:00 | DESKTOP-31GR1E6 | 54532  | api-server | INFO     | root:api_server.py:83 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:21:59.258075-+08:00 | DESKTOP-31GR1E6 | 54532  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:22:02.214621-+08:00 | DESKTOP-31GR1E6 | 54532  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:22:02] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:36:30.152915-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:36:30.152915-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:36:35.487222-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | root:api_server.py:78 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:36:35.487222-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:36:35.488220-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | ERROR    | root:inference.py:136 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T15:36:35.488220-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | root:api_server.py:65 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T15:36:35.488220-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | root:api_server.py:66 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T15:36:35.488220-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:36:35] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:36:55.741572-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | root:api_server.py:78 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:36:55.741572-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:36:58.604069-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:36:58] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:38:01.352040-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:38:01] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:38:21.461691-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:38:21] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:39:14.907904-+08:00 | DESKTOP-31GR1E6 | 61004  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:39:14.907904-+08:00 | DESKTOP-31GR1E6 | 61004  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:39:18.850889-+08:00 | DESKTOP-31GR1E6 | 61004  | api-server | INFO     | root:api_server.py:78 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:39:18.851886-+08:00 | DESKTOP-31GR1E6 | 61004  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:39:21.467035-+08:00 | DESKTOP-31GR1E6 | 61004  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:39:21] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:50:20.690776-+08:00 | DESKTOP-31GR1E6 | 61004  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:50:20] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:50:41.150861-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:50:41.150861-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:50:47.554678-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | root:api_server.py:78 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:50:47.554678-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:50:47.555674-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | ERROR    | root:inference.py:136 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-15T15:50:47.555674-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | root:api_server.py:65 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-15T15:50:47.555674-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | root:api_server.py:66 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-15T15:50:47.555674-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:50:47] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:52:43.154391-+08:00 | DESKTOP-31GR1E6 | 55056  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:52:43.154391-+08:00 | DESKTOP-31GR1E6 | 55056  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:52:46.311979-+08:00 | DESKTOP-31GR1E6 | 55056  | api-server | INFO     | root:api_server.py:78 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:52:46.312976-+08:00 | DESKTOP-31GR1E6 | 55056  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:52:48.888101-+08:00 | DESKTOP-31GR1E6 | 55056  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:52:48] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-15T15:56:47.031582-+08:00 | DESKTOP-31GR1E6 | 61048  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-15T15:56:47.032579-+08:00 | DESKTOP-31GR1E6 | 61048  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-15T15:56:50.398766-+08:00 | DESKTOP-31GR1E6 | 61048  | api-server | INFO     | root:api_server.py:78 |  "/api/ai/scale/analyzer POST"
+2024-11-15T15:56:50.399762-+08:00 | DESKTOP-31GR1E6 | 61048  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: E:/electronic_scale/test1.png
+2024-11-15T15:56:53.120788-+08:00 | DESKTOP-31GR1E6 | 61048  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [15/Nov/2024 15:56:53] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -

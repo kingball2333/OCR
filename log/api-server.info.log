@@ -1,0 +1,25 @@
+2024-11-20T10:42:47.103874-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-20T10:42:47.117451-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-20T10:42:52.017585-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | root:api_server.py:79 |  "/api/ai/scale/analyzer POST"
+2024-11-20T10:42:52.019585-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1854038721356238848-default/74122686336944d4abcb8e73d63e9300/1721123429.jpeg
+2024-11-20T10:42:52.675850-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | root:api_server.py:66 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-20T10:42:52.675850-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | root:api_server.py:67 | ½Ó¿ÚºÄÊ±: 0.66 Ãë
+2024-11-20T10:42:52.677853-+08:00 | DESKTOP-31GR1E6 | 16080  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [20/Nov/2024 10:42:52] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-20T10:46:12.582185-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-20T10:46:12.582185-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-20T10:46:16.230605-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | root:api_server.py:80 |  "/api/ai/scale/analyzer POST"
+2024-11-20T10:46:16.230605-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | root:api_server.py:18 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1854038721356238848-default/74122686336944d4abcb8e73d63e9300/1721123429.jpeg
+2024-11-20T10:46:16.826357-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | root:api_server.py:67 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 200, 'result': None, 'msg': 'ÍÆÀí½á¹û²»ºÏ·¨'}
+2024-11-20T10:46:16.826357-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | root:api_server.py:68 | ½Ó¿ÚºÄÊ±: 0.59 Ãë
+2024-11-20T10:46:16.827327-+08:00 | DESKTOP-31GR1E6 | 15960  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [20/Nov/2024 10:46:16] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-20T11:19:33.777952-+08:00 | DESKTOP-31GR1E6 | 11444  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-20T11:19:33.777952-+08:00 | DESKTOP-31GR1E6 | 11444  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m

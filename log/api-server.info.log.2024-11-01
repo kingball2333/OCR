@@ -1,0 +1,29 @@
+2024-11-01T14:40:22.711817-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-01T14:40:22.712817-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-01T14:40:28.265207-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:52 |  "/ GET"
+2024-11-01T14:40:28.266203-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [01/Nov/2024 14:40:28] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-01T14:40:28.309691-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:52 |  "/favicon.ico GET"
+2024-11-01T14:40:28.310688-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [01/Nov/2024 14:40:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-01T14:45:00.659622-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:52 |  "/api/ai/scale/analyzer POST"
+2024-11-01T14:45:00.668996-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:15 | Í¼Æ¬µØÖ·: xxx
+2024-11-01T14:45:00.668996-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | ÎÞ·¨ÏÂÔØÍ¼Æ¬: unknown url type: 'xxx'
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 501, in open
+    req = Request(fullurl, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 320, in __init__
+    self.full_url = url
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 346, in full_url
+    self._parse()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 375, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'xxx'
+2024-11-01T14:45:00.675540-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:40 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 500, 'result': None, 'msg': 'analyzer error'}
+2024-11-01T14:45:00.675540-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:41 | ½Ó¿ÚºÄÊ±: 0.01 Ãë
+2024-11-01T14:45:00.675540-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.2 - - [01/Nov/2024 14:45:00] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -

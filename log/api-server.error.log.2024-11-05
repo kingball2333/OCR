@@ -1,0 +1,107 @@
+2024-11-05T09:59:40.533026-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | 无法下载图片: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1296, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1134, in putrequest
+    self._output(self._encode_request(request))
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1214, in _encode_request
+    return request.encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | 无法下载图片: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1296, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1134, in putrequest
+    self._output(self._encode_request(request))
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1214, in _encode_request
+    return request.encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | 无法下载图片: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1296, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1134, in putrequest
+    self._output(self._encode_request(request))
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1214, in _encode_request
+    return request.encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+2024-11-05T10:36:59.288468-+08:00 | DESKTOP-31GR1E6 | 4088   | api-server | ERROR    | root:api_server.py:17 | 参数错误
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 14, in post
+    encoded_url = quote(pict_url, safe='/:')  # 确保URL安全编码
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\parse.py", line 883, in quote
+    return quote_from_bytes(string, safe)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\parse.py", line 908, in quote_from_bytes
+    raise TypeError("quote_from_bytes() expected bytes")
+TypeError: quote_from_bytes() expected bytes
+2024-11-05T11:33:13.505658-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | ERROR    | root:inference.py:125 | 无法解码图片
+2024-11-05T17:31:19.346530-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | ERROR    | root:api_server.py:46 | 推理错误: [WinError 3] 系统找不到指定的路径。: ''
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 38, in post
+    scale_result = inference(encoded_url)  # 使用编码后的 URL 进行推理
+  File "E:\electronic_scale\inference.py", line 128, in inference
+    texts = process_image(
+  File "E:\electronic_scale\inference.py", line 80, in process_image
+    os.makedirs(output_dir, exist_ok=True)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: ''
+2024-11-05T17:33:18.786985-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | ERROR    | root:api_server.py:46 | 推理错误: [WinError 3] 系统找不到指定的路径。: ''
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 38, in post
+    scale_result = inference(encoded_url)  # 使用编码后的 URL 进行推理
+  File "E:\electronic_scale\inference.py", line 128, in inference
+    texts = process_image(
+  File "E:\electronic_scale\inference.py", line 81, in process_image
+    os.makedirs(output_dir_paddlex, exist_ok=True)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: ''

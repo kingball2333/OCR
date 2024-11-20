@@ -1,0 +1,36 @@
+2024-10-31T15:17:42.999604-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | INFO     | root:api_server.py:46 |  "/ GET"
+2024-10-31T15:17:43.005592-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.201 - - [31/Oct/2024 15:17:43] "[33mGET / HTTP/1.1[0m" 404 -
+2024-10-31T17:08:38.372634-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | INFO     | root:api_server.py:46 |  "/api/ai/scale/analyzer POST"
+2024-10-31T17:08:38.386660-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | ERROR    | api_server:app.py:838 | Exception on /api/ai/scale/analyzer [POST]
+Traceback (most recent call last):
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+TypeError: post() missing 1 required positional argument: 'self'
+2024-10-31T17:08:38.449489-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.2 - - [31/Oct/2024 17:08:38] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-10-31T17:09:11.950663-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | INFO     | root:api_server.py:46 |  "/api/ai/scale/analyzer POST"
+2024-10-31T17:09:11.951662-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | ERROR    | api_server:app.py:838 | Exception on /api/ai/scale/analyzer [POST]
+Traceback (most recent call last):
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+TypeError: post() missing 1 required positional argument: 'self'
+2024-10-31T17:09:11.954654-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.2 - - [31/Oct/2024 17:09:11] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -

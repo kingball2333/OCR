@@ -1,0 +1,30 @@
+2024-10-31T17:08:38.386660-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | ERROR    | api_server:app.py:838 | Exception on /api/ai/scale/analyzer [POST]
+Traceback (most recent call last):
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+TypeError: post() missing 1 required positional argument: 'self'
+2024-10-31T17:09:11.951662-+08:00 | DESKTOP-31GR1E6 | 42684  | api-server | ERROR    | api_server:app.py:838 | Exception on /api/ai/scale/analyzer [POST]
+Traceback (most recent call last):
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+TypeError: post() missing 1 required positional argument: 'self'

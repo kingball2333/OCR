@@ -1,0 +1,50 @@
+2024-11-15T14:37:54.095624-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | ERROR    | root:inference.py:120 | 无法下载图片: <urlopen error unknown url type: d>
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 118, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: d>
+2024-11-15T14:38:24.891150-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | ERROR    | root:inference.py:120 | 无法下载图片: <urlopen error unknown url type: d>
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 118, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "D:\Anaconda\envs\pyt39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: d>
+2024-11-15T14:45:25.477769-+08:00 | DESKTOP-31GR1E6 | 54832  | api-server | ERROR    | root:api_server.py:28 | 参数错误: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 16, in post
+    args = request.form or request.get_json()
+  File "D:\Anaconda\envs\pyt39\lib\site-packages\werkzeug\wrappers\request.py", line 601, in get_json
+    return self.on_json_loading_failed(None)
+  File "D:\Anaconda\envs\pyt39\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+  File "D:\Anaconda\envs\pyt39\lib\site-packages\werkzeug\wrappers\request.py", line 644, in on_json_loading_failed
+    raise UnsupportedMediaType(
+werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-11-15T14:51:46.848332-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | ERROR    | root:inference.py:131 | 无法解码图片
+2024-11-15T14:53:01.538398-+08:00 | DESKTOP-31GR1E6 | 51364  | api-server | ERROR    | root:inference.py:131 | 无法解码图片
+2024-11-15T14:55:14.843750-+08:00 | DESKTOP-31GR1E6 | 56072  | api-server | ERROR    | root:inference.py:131 | 无法解码图片
+2024-11-15T14:57:44.574339-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | ERROR    | root:inference.py:132 | 无法解码图片
+2024-11-15T14:58:11.344740-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | ERROR    | root:inference.py:132 | 无法解码图片
+2024-11-15T14:58:34.157359-+08:00 | DESKTOP-31GR1E6 | 52808  | api-server | ERROR    | root:inference.py:132 | 无法解码图片
+2024-11-15T15:00:10.287714-+08:00 | DESKTOP-31GR1E6 | 54240  | api-server | ERROR    | root:inference.py:136 | 无法解码图片
+2024-11-15T15:36:35.488220-+08:00 | DESKTOP-31GR1E6 | 58900  | api-server | ERROR    | root:inference.py:136 | 无法解码图片
+2024-11-15T15:50:47.555674-+08:00 | DESKTOP-31GR1E6 | 51860  | api-server | ERROR    | root:inference.py:136 | 无法解码图片

@@ -1,0 +1,196 @@
+2024-11-05T09:59:40.496978-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:52 |  "/api/ai/scale/analyzer POST"
+2024-11-05T09:59:40.517677-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:15 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T09:59:40.533026-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | ÎÞ·¨ÏÂÔØÍ¼Æ¬: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1296, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1134, in putrequest
+    self._output(self._encode_request(request))
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1214, in _encode_request
+    return request.encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+2024-11-05T09:59:40.546486-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:40 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 500, 'result': None, 'msg': 'analyzer error'}
+2024-11-05T09:59:40.547486-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:41 | ½Ó¿ÚºÄÊ±: 0.03 Ãë
+2024-11-05T09:59:40.548536-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.6 - - [05/Nov/2024 09:59:40] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:52 |  "/api/ai/scale/analyzer POST"
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:15 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | ÎÞ·¨ÏÂÔØÍ¼Æ¬: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1296, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1134, in putrequest
+    self._output(self._encode_request(request))
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1214, in _encode_request
+    return request.encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:40 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 500, 'result': None, 'msg': 'analyzer error'}
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:41 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-05T09:59:49.754429-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.6 - - [05/Nov/2024 09:59:49] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:52 |  "/api/ai/scale/analyzer POST"
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:15 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | ÎÞ·¨ÏÂÔØÍ¼Æ¬: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1375, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1296, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1134, in putrequest
+    self._output(self._encode_request(request))
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\http\client.py", line 1214, in _encode_request
+    return request.encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 77-80: ordinal not in range(128)
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:40 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 500, 'result': None, 'msg': 'analyzer error'}
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | root:api_server.py:41 | ½Ó¿ÚºÄÊ±: 0.00 Ãë
+2024-11-05T10:00:13.898003-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.6 - - [05/Nov/2024 10:00:13] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-11-05T10:27:47.448138-+08:00 | DESKTOP-31GR1E6 | 4088   | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T10:27:47.448138-+08:00 | DESKTOP-31GR1E6 | 4088   | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T10:36:59.286429-+08:00 | DESKTOP-31GR1E6 | 4088   | api-server | INFO     | root:api_server.py:52 |  "/api/ai/scale/analyzer POST"
+2024-11-05T10:36:59.288468-+08:00 | DESKTOP-31GR1E6 | 4088   | api-server | ERROR    | root:api_server.py:17 | ²ÎÊý´íÎó
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 14, in post
+    encoded_url = quote(pict_url, safe='/:')  # È·±£URL°²È«±àÂë
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\parse.py", line 883, in quote
+    return quote_from_bytes(string, safe)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\parse.py", line 908, in quote_from_bytes
+    raise TypeError("quote_from_bytes() expected bytes")
+TypeError: quote_from_bytes() expected bytes
+2024-11-05T10:36:59.293406-+08:00 | DESKTOP-31GR1E6 | 4088   | api-server | INFO     | werkzeug:_internal.py:97 | 127.0.0.1 - - [05/Nov/2024 10:36:59] "[31m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 400 -
+2024-11-05T10:45:41.332875-+08:00 | DESKTOP-31GR1E6 | 29324  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T10:45:41.332875-+08:00 | DESKTOP-31GR1E6 | 29324  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T10:54:25.604113-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T10:54:25.604113-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T11:04:49.142384-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | root:api_server.py:61 |  "/api/ai/scale/analyzer POST"
+2024-11-05T11:04:49.142887-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | root:api_server.py:16 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T11:04:52.565605-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.6 - - [05/Nov/2024 11:04:52] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-05T11:05:14.994845-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.6 - - [05/Nov/2024 11:05:14] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-05T11:25:17.175513-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 11:25:17] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T11:25:41.842024-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 11:25:41] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T11:26:00.244224-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 11:26:00] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T11:29:54.425409-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 11:29:54] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T11:33:13.505658-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | ERROR    | root:inference.py:125 | ÎÞ·¨½âÂëÍ¼Æ¬
+2024-11-05T11:33:13.509157-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.100.2 - - [05/Nov/2024 11:33:13] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-11-05T14:26:41.232756-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 14:26:41] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T14:26:46.590369-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 14:26:46] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T14:26:47.587653-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 14:26:47] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T14:26:48.481035-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 14:26:48] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T16:32:48.799825-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 16:32:48] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T17:16:21.482262-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 17:16:21] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-11-05T17:20:58.046106-+08:00 | DESKTOP-31GR1E6 | 14880  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 17:20:58] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-05T17:31:12.473617-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T17:31:12.474614-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T17:31:19.242777-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | root:api_server.py:61 |  "/api/ai/scale/analyzer POST"
+2024-11-05T17:31:19.242777-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | root:api_server.py:16 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T17:31:19.346530-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | ERROR    | root:api_server.py:46 | ÍÆÀí´íÎó: [WinError 3] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£: ''
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 38, in post
+    scale_result = inference(encoded_url)  # Ê¹ÓÃ±àÂëºóµÄ URL ½øÐÐÍÆÀí
+  File "E:\electronic_scale\inference.py", line 128, in inference
+    texts = process_image(
+  File "E:\electronic_scale\inference.py", line 80, in process_image
+    os.makedirs(output_dir, exist_ok=True)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£: ''
+2024-11-05T17:31:19.354789-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | root:api_server.py:49 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 500, 'result': None, 'msg': 'analyzer error'}
+2024-11-05T17:31:19.355759-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | root:api_server.py:50 | ½Ó¿ÚºÄÊ±: 0.11 Ãë
+2024-11-05T17:31:19.356784-+08:00 | DESKTOP-31GR1E6 | 18160  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 17:31:19] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-11-05T17:33:14.544121-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T17:33:14.545118-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T17:33:18.680269-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | root:api_server.py:61 |  "/api/ai/scale/analyzer POST"
+2024-11-05T17:33:18.680269-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | root:api_server.py:16 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T17:33:18.786985-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | ERROR    | root:api_server.py:46 | ÍÆÀí´íÎó: [WinError 3] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£: ''
+Traceback (most recent call last):
+  File "E:\electronic_scale\api_server.py", line 38, in post
+    scale_result = inference(encoded_url)  # Ê¹ÓÃ±àÂëºóµÄ URL ½øÐÐÍÆÀí
+  File "E:\electronic_scale\inference.py", line 128, in inference
+    texts = process_image(
+  File "E:\electronic_scale\inference.py", line 81, in process_image
+    os.makedirs(output_dir_paddlex, exist_ok=True)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [WinError 3] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£: ''
+2024-11-05T17:33:18.787982-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | root:api_server.py:49 | ½Ó¿Ú·µ»ØÖµÎª£º{'code': 500, 'result': None, 'msg': 'analyzer error'}
+2024-11-05T17:33:18.787982-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | root:api_server.py:50 | ½Ó¿ÚºÄÊ±: 0.11 Ãë
+2024-11-05T17:33:18.787982-+08:00 | DESKTOP-31GR1E6 | 34964  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 17:33:18] "[35m[1mPOST /api/ai/scale/analyzer HTTP/1.1[0m" 500 -
+2024-11-05T17:33:34.993603-+08:00 | DESKTOP-31GR1E6 | 31452  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T17:33:34.993603-+08:00 | DESKTOP-31GR1E6 | 31452  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T17:33:37.659731-+08:00 | DESKTOP-31GR1E6 | 31452  | api-server | INFO     | root:api_server.py:61 |  "/api/ai/scale/analyzer POST"
+2024-11-05T17:33:37.659731-+08:00 | DESKTOP-31GR1E6 | 31452  | api-server | INFO     | root:api_server.py:16 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T17:33:40.461118-+08:00 | DESKTOP-31GR1E6 | 31452  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 17:33:40] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-05T17:39:32.622295-+08:00 | DESKTOP-31GR1E6 | 12248  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T17:39:32.622295-+08:00 | DESKTOP-31GR1E6 | 12248  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m
+2024-11-05T17:39:36.944824-+08:00 | DESKTOP-31GR1E6 | 12248  | api-server | INFO     | root:api_server.py:61 |  "/api/ai/scale/analyzer POST"
+2024-11-05T17:39:36.944824-+08:00 | DESKTOP-31GR1E6 | 12248  | api-server | INFO     | root:api_server.py:16 | Í¼Æ¬µØÖ·: http://192.168.100.3:7012/scione5/1853618043079495680-default/4d98aac775d545f18e746ad6e759cffd/OCRÊ¶±ð²âÊÔ.png
+2024-11-05T17:39:39.533185-+08:00 | DESKTOP-31GR1E6 | 12248  | api-server | INFO     | werkzeug:_internal.py:97 | 192.168.99.88 - - [05/Nov/2024 17:39:39] "POST /api/ai/scale/analyzer HTTP/1.1" 200 -
+2024-11-05T17:57:47.694268-+08:00 | DESKTOP-31GR1E6 | 24504  | api-server | INFO     | werkzeug:_internal.py:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.99.88:5001
+2024-11-05T17:57:47.694268-+08:00 | DESKTOP-31GR1E6 | 24504  | api-server | INFO     | werkzeug:_internal.py:97 | [33mPress CTRL+C to quit[0m

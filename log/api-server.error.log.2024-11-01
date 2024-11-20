@@ -1,0 +1,15 @@
+2024-11-01T14:45:00.668996-+08:00 | DESKTOP-31GR1E6 | 20172  | api-server | ERROR    | root:inference.py:116 | Œﬁ∑®œ¬‘ÿÕº∆¨: unknown url type: 'xxx'
+Traceback (most recent call last):
+  File "E:\electronic_scale\inference.py", line 114, in inference
+    res = urllib.request.urlopen(pic_url)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 501, in open
+    req = Request(fullurl, data)
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 320, in __init__
+    self.full_url = url
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 346, in full_url
+    self._parse()
+  File "C:\Users\jj_gu\Anaconda3\envs\py39\lib\urllib\request.py", line 375, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'xxx'
