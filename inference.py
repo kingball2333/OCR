@@ -8,7 +8,6 @@ import requests
 import urllib.request
 
 
-
 FONT_PATH = ""
 PIPELINE_CONFIG = "D:/Desktop/OCR.yaml"
 OUTPUT_DIR = "./output"
@@ -104,7 +103,6 @@ def crop_image(img: np.ndarray, bbox: List[int]) -> np.ndarray:
 
     # 确保裁剪区域的宽度和高度都大于0
     if x_max <= x_min or y_max <= y_min:
-        print("裁剪区域无效！")
         return None
 
     # 裁剪并返回图像
@@ -147,7 +145,6 @@ def process_image(image: np.ndarray, font_path: str, pipeline_config: str, outpu
     cropped_img = crop_image(image, top_bbox)
 
     if cropped_img is None:
-        print("裁剪后的图像为空！")
         return None
 
     with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp_file:
