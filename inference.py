@@ -26,7 +26,6 @@ rec_model_url = "https://1111.com/PP-OCRv4_mobile_rec.pdmodel"
 # 检查并下载模型
 def check_and_download_model(model_name, model_url, save_dir):
     model_path = os.path.join(save_dir, model_name)
-
     if not os.path.exists(model_path):
         os.makedirs(save_dir, exist_ok=True)
         download_model(model_url, model_path)
@@ -59,7 +58,7 @@ def find_digit_display_regions(img: np.ndarray, visualize: bool = False) -> Opti
     lower_green = np.array([40, 50, 50])  # 绿色低阈值
     upper_green = np.array([80, 255, 255])  # 绿色高阈值
 
-    # 生成掩模，筛选出绿色区域
+    # 筛选出绿色区域
     mask = cv2.inRange(hsv, lower_green, upper_green)
 
     # 去除噪声
@@ -75,11 +74,10 @@ def find_digit_display_regions(img: np.ndarray, visualize: bool = False) -> Opti
     # 提取所有轮廓的边界框
     bounding_boxes = [cv2.boundingRect(i) for i in contours]
 
-    # 按照y坐标排序，找出最上面的显示框
+    # 按照y坐标排序，找最上面的显示框
     bounding_boxes.sort(key=lambda x: x[1])
 
     if visualize:
-        # 可视化绿色区域和边界框
         img_copy = img.copy()
         for box in bounding_boxes:
             x, y, w, h = box
@@ -105,7 +103,6 @@ def crop_image(img: np.ndarray, bbox: List[int]) -> np.ndarray:
 
     # 确保裁剪区域的宽度和高度都大于0
     if x_max <= x_min or y_max <= y_min:
-        print("裁剪区域无效！")
         return None
 
     # 裁剪并返回图像
@@ -120,7 +117,7 @@ def perform_paddlex_ocr(image_path: str, pipeline_config: str, output_dir: str) 
 
     texts = []
     for res in output:
-        # res.save_to_img(output_dir)
+        res.save_to_img(output_dir)
         if 'rec_text' in res and res['rec_text']:
             texts.extend(res['rec_text'])
 
@@ -147,7 +144,6 @@ def process_image(image: np.ndarray, font_path: str, pipeline_config: str, outpu
     cropped_img = crop_image(image, top_bbox)
 
     if cropped_img is None:
-        print("裁剪后的图像为空！")
         return None
 
     with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp_file:
