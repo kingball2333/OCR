@@ -26,6 +26,7 @@ rec_model_url = "https://1111.com/PP-OCRv4_mobile_rec.pdmodel"
 # 检查并下载模型
 def check_and_download_model(model_name, model_url, save_dir):
     model_path = os.path.join(save_dir, model_name)
+
     if not os.path.exists(model_path):
         os.makedirs(save_dir, exist_ok=True)
         download_model(model_url, model_path)
@@ -45,8 +46,7 @@ def download_model(model_url, save_path):
         pass
 
 
-
-# 使用HSV颜色空间查找绿色区域（数码管显示屏）
+# 使用HSV颜色空间查找绿色区域
 def find_digit_display_regions(img: np.ndarray, visualize: bool = False) -> Optional[List[List[int]]]:
     if img is None:
         return None
@@ -74,10 +74,11 @@ def find_digit_display_regions(img: np.ndarray, visualize: bool = False) -> Opti
     # 提取所有轮廓的边界框
     bounding_boxes = [cv2.boundingRect(i) for i in contours]
 
-    # 按照y坐标排序，找最上面的显示框
+    # 按照y坐标排序，找出最上面的显示框
     bounding_boxes.sort(key=lambda x: x[1])
 
     if visualize:
+        # 可视化绿色区域和边界框
         img_copy = img.copy()
         for box in bounding_boxes:
             x, y, w, h = box
@@ -103,11 +104,13 @@ def crop_image(img: np.ndarray, bbox: List[int]) -> np.ndarray:
 
     # 确保裁剪区域的宽度和高度都大于0
     if x_max <= x_min or y_max <= y_min:
+        print("裁剪区域无效！")
         return None
 
     # 裁剪并返回图像
     cropped = img[y_min:y_max, x_min:x_max]
     return cropped
+
 
 
 # 使用 PaddleX 模型进行 OCR 识别，返回识别的文本列表
@@ -117,7 +120,7 @@ def perform_paddlex_ocr(image_path: str, pipeline_config: str, output_dir: str) 
 
     texts = []
     for res in output:
-        res.save_to_img(output_dir)
+        # res.save_to_img(output_dir)
         if 'rec_text' in res and res['rec_text']:
             texts.extend(res['rec_text'])
 
@@ -138,12 +141,13 @@ def process_image(image: np.ndarray, font_path: str, pipeline_config: str, outpu
     if bounding_boxes is None:
         return None
 
-    # 选择最上面的数码管第一个框
+    # 选择最上面的第一个框
     top_bbox = bounding_boxes[0]
-    # 裁剪出最上面的数码管区域 (颜色不变)
+    # 裁剪最上面数码管区域颜色不变
     cropped_img = crop_image(image, top_bbox)
 
     if cropped_img is None:
+        print("裁剪后的图像为空！")
         return None
 
     with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp_file:
@@ -165,20 +169,20 @@ def inference(image_path: str, font_path: str = FONT_PATH, pipeline_config: str 
     # check_and_download_model(det_model_name, det_model_url, model_dir)
     # check_and_download_model(rec_model_name, rec_model_url, model_dir)
 
-    # try:
-    #     res = urllib.request.urlopen(pic_url)
-    # except Exception:
-    #     return None
-    #
-    # img_array = np.asarray(bytearray(res.read()), dtype="uint8")
-    # img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
-    # if img is None:
-    #     return None
+    try:
+        res = urllib.request.urlopen(image_path)
+    except Exception:
+        return None
 
-    # 读取本地图片
-    img = cv2.imread(image_path)
+    img_array = np.asarray(bytearray(res.read()), dtype="uint8")
+    img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
     if img is None:
         return None
+
+    # # 读取本地图片
+    # img = cv2.imread(image_path)
+    # if img is None:
+    #     return None
 
     texts = process_image(
         image=img,
@@ -192,19 +196,20 @@ def inference(image_path: str, font_path: str = FONT_PATH, pipeline_config: str 
     return ''.join(texts) if texts else None
 
 
-def main():
-    # 输入本地图像文件的路径
-    image_path = "E:/electronic_scale/test3.png"
 
-    # 调用inference函数进行OCR识别
-    recognized_text = inference(image_path)
-
-    # 输出识别结果
-    if recognized_text:
-        print(f"识别的文本：{recognized_text}")
-    else:
-        print("没有识别到文本")
-
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     # 输入本地图像文件的路径
+#     image_path = "E:/electronic_scale/test3.png"
+#
+#     # 调用inference函数进行OCR识别
+#     recognized_text = inference(image_path)
+#
+#     # 输出识别结果
+#     if recognized_text:
+#         print(f"识别的文本：{recognized_text}")
+#     else:
+#         print("没有识别到文本")
+#
+#
+# if __name__ == "__main__":
+#     main()
