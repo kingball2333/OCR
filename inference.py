@@ -9,7 +9,7 @@ import urllib.request
 
 
 FONT_PATH = ""
-PIPELINE_CONFIG = "D:/Desktop/OCR.yaml"
+PIPELINE_CONFIG = "D:/Desktop/OCR.yaml"    # 注意这里换成自己的文件位置
 OUTPUT_DIR = "./output"
 OUTPUT_DIR_PADDEX = "./output_paddlex"
 VISUALIZE = False  # 根据需要设置是否可视化
@@ -18,7 +18,7 @@ VISUALIZE = False  # 根据需要设置是否可视化
 model_dir = "/root/.paddlex/official_models/"
 det_model_name = "PP-OCRv4_mobile_det.pdmodel"
 rec_model_name = "PP-OCRv4_mobile_rec.pdmodel"
-det_model_url = "https://1111.com/PP-OCRv4_mobile_det.pdmodel"
+det_model_url = "https://1111.com/PP-OCRv4_mobile_det.pdmodel"       # 注意这里换成正确的下载网址
 rec_model_url = "https://1111.com/PP-OCRv4_mobile_rec.pdmodel"
 
 
@@ -118,7 +118,6 @@ def perform_paddlex_ocr(image_path: str, pipeline_config: str, output_dir: str) 
 
     texts = []
     for res in output:
-        # res.save_to_img(output_dir)
         if 'rec_text' in res and res['rec_text']:
             texts.extend(res['rec_text'])
 
@@ -162,9 +161,9 @@ def inference(image_path: str, font_path: str = FONT_PATH, pipeline_config: str 
               output_dir: str = OUTPUT_DIR, output_dir_paddlex: str = OUTPUT_DIR_PADDEX,
               visualize: bool = VISUALIZE) -> Optional[str]:
 
-    # # 检查并下载模型
-    # check_and_download_model(det_model_name, det_model_url, model_dir)
-    # check_and_download_model(rec_model_name, rec_model_url, model_dir)
+    # 检查并下载模型
+    check_and_download_model(det_model_name, det_model_url, model_dir)
+    check_and_download_model(rec_model_name, rec_model_url, model_dir)
 
     try:
         res = urllib.request.urlopen(image_path)
@@ -176,10 +175,6 @@ def inference(image_path: str, font_path: str = FONT_PATH, pipeline_config: str 
     if img is None:
         return None
 
-    # # 读取本地图片
-    # img = cv2.imread(image_path)
-    # if img is None:
-    #     return None
 
     texts = process_image(
         image=img,
@@ -191,22 +186,3 @@ def inference(image_path: str, font_path: str = FONT_PATH, pipeline_config: str 
     )
 
     return ''.join(texts) if texts else None
-
-
-
-# def main():
-#     # 输入本地图像文件的路径
-#     image_path = "E:/electronic_scale/test3.png"
-#
-#     # 调用inference函数进行OCR识别
-#     recognized_text = inference(image_path)
-#
-#     # 输出识别结果
-#     if recognized_text:
-#         print(f"识别的文本：{recognized_text}")
-#     else:
-#         print("没有识别到文本")
-#
-#
-# if __name__ == "__main__":
-#     main()
